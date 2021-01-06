@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="ISTest" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="LlH-Nf-UOz" id="TbZ-fs-iHE"/>
+                <outlet property="label" destination="yLa-Ru-Ts9" id="wz8-Z8-Gkn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="178"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLa-Ru-Ts9">
+                    <rect key="frame" x="13.5" y="109" width="137" height="49"/>
+                    <color key="tintColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                    <color key="textColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LlH-Nf-UOz">
+                    <rect key="frame" x="72" y="79" width="20" height="20"/>
+                    <color key="tintColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="color" red="0.92941176469999998" green="0.12549019610000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LlH-Nf-UOz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="2tu-U6-MYv"/>
+                <constraint firstItem="yLa-Ru-Ts9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="550-5g-4Dg"/>
+                <constraint firstItem="LlH-Nf-UOz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Cit-DZ-JGH"/>
+                <constraint firstItem="yLa-Ru-Ts9" firstAttribute="top" secondItem="LlH-Nf-UOz" secondAttribute="bottom" constant="10" id="SVG-7f-TRw"/>
+                <constraint firstItem="yLa-Ru-Ts9" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.835366" id="SnQ-he-oNC"/>
+                <constraint firstItem="yLa-Ru-Ts9" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.253731" constant="15.000046000000005" id="W0b-xv-odk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yLa-Ru-Ts9" secondAttribute="bottom" constant="20" id="klC-q8-hiL"/>
+                <constraint firstItem="yLa-Ru-Ts9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oKv-KS-qVH"/>
+                <constraint firstItem="yLa-Ru-Ts9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w4h-CJ-kYc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-75.362318840579718" y="-309.375"/>
+        </view>
+    </objects>
+</document>

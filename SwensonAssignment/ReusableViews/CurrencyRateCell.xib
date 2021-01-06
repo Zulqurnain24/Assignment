@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="rateCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="rateCell" rowHeight="74" id="KGk-i7-Jjw" customClass="CurrencyRateCell" customModule="SwensonAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqH-h1-vBU" customClass="CurrencyView" customModule="SwensonAssignment">
+                        <rect key="frame" x="0.0" y="0.0" width="161" height="74"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqk-mc-Rgr">
+                        <rect key="frame" x="226" y="0.0" width="94" height="74"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bqk-mc-Rgr" firstAttribute="leading" secondItem="eqH-h1-vBU" secondAttribute="trailing" constant="65" id="HTE-2W-oNO"/>
+                    <constraint firstItem="eqH-h1-vBU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tna-o6-IvK"/>
+                    <constraint firstItem="eqH-h1-vBU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="bZZ-6X-yHG"/>
+                    <constraint firstItem="eqH-h1-vBU" firstAttribute="top" secondItem="bqk-mc-Rgr" secondAttribute="top" id="hmi-7O-hIW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="eqH-h1-vBU" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.503125" id="35g-va-NgL"/>
+                <constraint firstItem="bqk-mc-Rgr" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.29375" id="edf-yj-did"/>
+                <constraint firstItem="eqH-h1-vBU" firstAttribute="height" secondItem="njF-e1-oar" secondAttribute="height" id="fvc-UH-WN2"/>
+                <constraint firstItem="bqk-mc-Rgr" firstAttribute="height" secondItem="njF-e1-oar" secondAttribute="height" id="vgZ-Gk-qYj"/>
+            </constraints>
+            <connections>
+                <outlet property="currencyView" destination="eqH-h1-vBU" id="ojE-Kv-Wj7"/>
+                <outlet property="rateLabel" destination="bqk-mc-Rgr" id="0Ma-VQ-lKt"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
